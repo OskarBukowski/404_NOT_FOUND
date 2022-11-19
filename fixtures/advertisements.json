@@ -98,6 +98,90 @@
     }
 },
 {
+    "model": "advertisements.image",
+    "pk": 14,
+    "fields": {
+        "imagefile": "media/meme01.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 15,
+    "fields": {
+        "imagefile": "media/meme02.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 16,
+    "fields": {
+        "imagefile": "media/meme03.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 17,
+    "fields": {
+        "imagefile": "media/meme04.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 18,
+    "fields": {
+        "imagefile": "media/meme05.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 19,
+    "fields": {
+        "imagefile": "media/meme06.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 20,
+    "fields": {
+        "imagefile": "media/meme07.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 21,
+    "fields": {
+        "imagefile": "media/meme08.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 22,
+    "fields": {
+        "imagefile": "media/meme09.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 23,
+    "fields": {
+        "imagefile": "media/meme10.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 24,
+    "fields": {
+        "imagefile": "media/meme11.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 25,
+    "fields": {
+        "imagefile": "media/meme12.png"
+    }
+},
+{
     "model": "advertisements.category",
     "pk": 1,
     "fields": {
@@ -205,7 +289,8 @@
         "phone": 2137,
         "picture": "",
         "category": 1,
-        "description": "DUPAdupa"
+        "description": "DUPAdupa",
+        "image": 14
     }
 },
 {
@@ -220,7 +305,8 @@
         "phone": 213,
         "picture": "",
         "category": 3,
-        "description": "gdsvgvds"
+        "description": "gdsvgvds",
+        "image": 15
     }
 },
 {
@@ -235,7 +321,8 @@
         "phone": 321,
         "picture": "",
         "category": 2,
-        "description": "sdfbdg"
+        "description": "sdfbdg",
+        "image": 16
     }
 },
 {
@@ -250,7 +337,8 @@
         "phone": 213,
         "picture": "",
         "category": 2,
-        "description": "dfsdfgbdfbdfb"
+        "description": "dfsdfgbdfbdfb",
+        "image": 17
     }
 },
 {
@@ -265,7 +353,8 @@
         "phone": 21,
         "picture": "",
         "category": 1,
-        "description": "fscsdvc"
+        "description": "fscsdvc",
+        "image": 18
     }
 },
 {
@@ -280,7 +369,8 @@
         "phone": 21,
         "picture": "",
         "category": 1,
-        "description": "dsvcxzx"
+        "description": "dsvcxzx",
+        "image": 19
     }
 },
 {
@@ -295,7 +385,8 @@
         "phone": 224444444,
         "picture": "",
         "category": 1,
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt lobortis diam sit amet congue. Vivamus sed dolor porta est blandit tristique nec eu purus. Maecenas et tristique nisi, quis pharetra magna. Fusce tristique ante ligula, vel interdum quam dapibus in. Proin mi risus, aliquet eget interdum vel, lobortis a erat. Aliquam ornare ante eget feugiat tristique. Pellentesque posuere tempor nunc, quis consectetur justo fermentum eget. Proin at suscipit purus. Aliquam molestie cursus tempor. Duis sodales nulla a augue sodales, vitae imperdiet libero pulvinar. Suspendisse eget leo ex. Mauris ut lacinia tortor."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt lobortis diam sit amet congue. Vivamus sed dolor porta est blandit tristique nec eu purus. Maecenas et tristique nisi, quis pharetra magna. Fusce tristique ante ligula, vel interdum quam dapibus in. Proin mi risus, aliquet eget interdum vel, lobortis a erat. Aliquam ornare ante eget feugiat tristique. Pellentesque posuere tempor nunc, quis consectetur justo fermentum eget. Proin at suscipit purus. Aliquam molestie cursus tempor. Duis sodales nulla a augue sodales, vitae imperdiet libero pulvinar. Suspendisse eget leo ex. Mauris ut lacinia tortor.",
+        "image": 20
     }
 },
 {
@@ -310,7 +401,8 @@
         "phone": 504320667,
         "picture": "",
         "category": 2,
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt lobortis diam sit amet congue. Vivamus sed dolor porta est blandit tristique nec eu purus. Maecenas et tristique nisi, quis pharetra magna. Fusce tristique ante ligula, vel interdum quam dapibus in. Proin mi risus, aliquet eget interdum vel, lobortis a erat. Aliquam ornare ante eget feugiat tristique. Pellentesque posuere tempor nunc, quis consectetur justo fermentum eget. Proin at suscipit purus. Aliquam molestie cursus tempor. Duis sodales nulla a augue sodales, vitae imperdiet libero pulvinar. Suspendisse eget leo ex. Mauris ut lacinia tortor."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt lobortis diam sit amet congue. Vivamus sed dolor porta est blandit tristique nec eu purus. Maecenas et tristique nisi, quis pharetra magna. Fusce tristique ante ligula, vel interdum quam dapibus in. Proin mi risus, aliquet eget interdum vel, lobortis a erat. Aliquam ornare ante eget feugiat tristique. Pellentesque posuere tempor nunc, quis consectetur justo fermentum eget. Proin at suscipit purus. Aliquam molestie cursus tempor. Duis sodales nulla a augue sodales, vitae imperdiet libero pulvinar. Suspendisse eget leo ex. Mauris ut lacinia tortor.",
+        "image": 21
     }
 },
 {
@@ -325,7 +417,8 @@
         "phone": 456090891,
         "picture": "",
         "category": 1,
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt lobortis diam sit amet congue. Vivamus sed dolor porta est blandit tristique nec eu purus. Maecenas et tristique nisi, quis pharetra magna. Fusce tristique ante ligula, vel interdum quam dapibus in. Proin mi risus, aliquet eget interdum vel, lobortis a erat. Aliquam ornare ante eget feugiat tristique. Pellentesque posuere tempor nunc, quis consectetur justo fermentum eget. Proin at suscipit purus. Aliquam molestie cursus tempor. Duis sodales nulla a augue sodales, vitae imperdiet libero pulvinar. Suspendisse eget leo ex. Mauris ut lacinia tortor."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt lobortis diam sit amet congue. Vivamus sed dolor porta est blandit tristique nec eu purus. Maecenas et tristique nisi, quis pharetra magna. Fusce tristique ante ligula, vel interdum quam dapibus in. Proin mi risus, aliquet eget interdum vel, lobortis a erat. Aliquam ornare ante eget feugiat tristique. Pellentesque posuere tempor nunc, quis consectetur justo fermentum eget. Proin at suscipit purus. Aliquam molestie cursus tempor. Duis sodales nulla a augue sodales, vitae imperdiet libero pulvinar. Suspendisse eget leo ex. Mauris ut lacinia tortor.",
+        "image": 22
     }
 },
 {
@@ -340,7 +433,8 @@
         "phone": 334775923,
         "picture": "",
         "category": 2,
-        "description": "Sed tempor porttitor semper. Aliquam vel ipsum risus. Vivamus vehicula tortor vel auctor ultricies. Nullam eget viverra sem. Nunc vestibulum augue in felis rhoncus, sit amet molestie ex egestas. Nullam rutrum ante velit, non fringilla velit dapibus sit amet. Sed finibus elit quis felis luctus, ut laoreet nisl cursus. Nulla ut massa sed odio porta vulputate. Phasellus molestie tempus nulla sed consequat. Suspendisse ac nisi nec nisi ullamcorper convallis ut sit amet neque. Fusce tempor vitae urna vel semper. Ut eget felis eu orci venenatis viverra"
+        "description": "Sed tempor porttitor semper. Aliquam vel ipsum risus. Vivamus vehicula tortor vel auctor ultricies. Nullam eget viverra sem. Nunc vestibulum augue in felis rhoncus, sit amet molestie ex egestas. Nullam rutrum ante velit, non fringilla velit dapibus sit amet. Sed finibus elit quis felis luctus, ut laoreet nisl cursus. Nulla ut massa sed odio porta vulputate. Phasellus molestie tempus nulla sed consequat. Suspendisse ac nisi nec nisi ullamcorper convallis ut sit amet neque. Fusce tempor vitae urna vel semper. Ut eget felis eu orci venenatis viverra",
+        "image": 23
     }
 },
 {
@@ -355,7 +449,8 @@
         "phone": 334677890,
         "picture": "",
         "category": 9,
-        "description": "Vivamus eu quam et sapien fermentum imperdiet non vel nunc. Integer feugiat viverra lorem in maximus. In luctus, odio sit amet porttitor eleifend, leo augue tempus odio, et sollicitudin ex enim in eros. Vivamus et euismod odio, vitae fermentum lacus. Aliquam ultricies a tellus et consectetur. Morbi vitae sem arcu. Fusce nec viverra sapien."
+        "description": "Vivamus eu quam et sapien fermentum imperdiet non vel nunc. Integer feugiat viverra lorem in maximus. In luctus, odio sit amet porttitor eleifend, leo augue tempus odio, et sollicitudin ex enim in eros. Vivamus et euismod odio, vitae fermentum lacus. Aliquam ultricies a tellus et consectetur. Morbi vitae sem arcu. Fusce nec viverra sapien.",
+        "image": 24
     }
 },
 {
@@ -370,7 +465,8 @@
         "phone": 446788344,
         "picture": "",
         "category": 4,
-        "description": "Curabitur ornare felis id neque porttitor tempus. Sed porttitor orci vitae arcu tempor dignissim. Integer porttitor magna nec eleifend tempus. Cras sit amet est non tellus bibendum congue. Aenean sed est pellentesque, volutpat felis et, sollicitudin turpis. Aenean at tortor at sapien commodo suscipit"
+        "description": "Curabitur ornare felis id neque porttitor tempus. Sed porttitor orci vitae arcu tempor dignissim. Integer porttitor magna nec eleifend tempus. Cras sit amet est non tellus bibendum congue. Aenean sed est pellentesque, volutpat felis et, sollicitudin turpis. Aenean at tortor at sapien commodo suscipit",
+        "image": 25
     }
 }
 ]
