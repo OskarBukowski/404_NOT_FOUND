@@ -1,12 +1,20 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
+from django.db.models import Q
 from advertisements.forms import AdvertForm, AdvertFilterForm
 from advertisements.models import Advert
 
 
 def list_view(request):
     adverts = Advert.objects.all()
-    filter_form = AdvertFilterForm(request.POST or None)
+    filter_form = AdvertFilterForm(request.GET or None)
+    if filter_form.is_valid():
+        if title := filter_form.cleaned_data.get('title', '').strip():
+            adverts = adverts.filter(title__icontains=title)
+        if city := filter_form.cleaned_data.get('city', '').strip():
+            adverts = adverts.filter(city__icontains=city)
+        if category := filter_form.cleaned_data.get('category', ''):
+            adverts = adverts.filter(category__in=category)
     return render(request, 'adverts.html', context={'form': filter_form, 'adverts': adverts})
 
 
@@ -23,8 +31,3 @@ def create_advert(request):
         form.save()
         return redirect('adverts')
     return render(request, 'advert_create.html', {'form': form})
-
-
-def filter_adverts(request):
-    form = AdvertFilterForm(request.POST or None)
-    return render(request, 'advert_filter.html', {'form': form})
