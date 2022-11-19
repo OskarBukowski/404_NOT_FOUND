@@ -29,7 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '3.10.192.63']
 
-LOGIN_URL = 'login/'
+LOGIN_URL = '/login'
 
 
 # Application definition
