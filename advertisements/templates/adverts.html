@@ -2,6 +2,7 @@
 
 {% block body %}
   <div>
+<<<<<<< HEAD
     <ul>
       {% for advert in adverts %}
         <li>
@@ -10,6 +11,11 @@
         </li>
       {% endfor %}
     </ul>
+=======
+    {% include 'advert_filter.html' %}
+  </div>
+  <div>
+>>>>>>> ae5be5b2c4f35a3fd29fa920f14382df4a66fc55
     <hr>
     {% for advert in adverts %}
       <a href="{% url 'single_advert' advert.id %}">{{ advert.title }}</a>
