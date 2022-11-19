@@ -1,7 +1,7 @@
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 from advertisements.forms import AdvertForm, AdvertFilterForm, ImageForm
-from django.core.paginator import Paginator
 from advertisements.models import Advert, Image
 
 
@@ -16,7 +16,7 @@ def list_view(request):
         if city := filter_form.cleaned_data.get('city', '').strip():
             adverts = adverts.filter(city__icontains=city)
 
-    #     # adverts = adverts.order_by(filter_form.cleaned_data.get('post_date') or '-post_date')
+        adverts = adverts.order_by(filter_form.cleaned_data.get('order_by') or '-post_date')
 
     return render(request, 'adverts.html', context={'form': filter_form, 'adverts': adverts})
 

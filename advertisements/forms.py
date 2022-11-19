@@ -10,23 +10,15 @@ class AdvertForm(forms.ModelForm):
         exclude = ('is_active', 'user',)
 
 
-class AdvertFilterForm(forms.ModelForm):
+class AdvertFilterForm(forms.Form):
     ORDER_CHOICES = (
-        ('title', 'title ASC'),
-        ('-title', 'title DESC'),
         ('post_date', 'date ASC'),
         ('-post_date', 'date DESC'),)
 
     category = forms.ChoiceField(choices=[(c.pk, c.name) for c in Category.objects.all()], required=False)
     title = forms.CharField(required=False)
     city = forms.CharField(required=False)
-    # post_date = forms.ChoiceField(choices=ORDER_CHOICES)
-
-    class Meta:
-        model = Advert
-        fields = ('title', 'city',)
-
-
+    order_by = forms.ChoiceField(choices=ORDER_CHOICES)
 
 
 class ImageForm(forms.ModelForm):
