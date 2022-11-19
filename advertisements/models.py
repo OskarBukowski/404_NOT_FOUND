@@ -12,7 +12,7 @@ class Image(models.Model):
 
 class Category(models.Model):
     name = models.CharField(max_length=128)
-    image = models.OneToOneField(Image, on_delete=models.CASCADE)
+    image = models.OneToOneField(Image, on_delete=models.DO_NOTHING, blank=True, null=True)
 
     def __str__(self):
         return self.name
@@ -21,14 +21,14 @@ class Category(models.Model):
 class Advert(models.Model):
     title = models.CharField(max_length=128)
     post_date = models.DateTimeField(auto_now_add=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.DO_NOTHING)
     is_active = models.BooleanField(default=True)
     city = models.CharField(max_length=128)
     phone = models.IntegerField()
     picture = models.ImageField(blank=True, null=True)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.DO_NOTHING)
     description = models.TextField()
-    image = models.OneToOneField(Image, on_delete=models.CASCADE)
+    image = models.OneToOneField(Image, on_delete=models.DO_NOTHING, blank=True, null=True)
 
     def __str__(self):
         return self.title
