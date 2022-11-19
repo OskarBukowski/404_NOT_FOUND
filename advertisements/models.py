@@ -28,7 +28,7 @@ class Advert(models.Model):
     is_active = models.BooleanField(default=True)
     city = models.CharField(max_length=128)
     phone = models.IntegerField()
-    picture = models.ImageField()
+    picture = models.ImageField(blank=True, null=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     description = models.TextField()
 

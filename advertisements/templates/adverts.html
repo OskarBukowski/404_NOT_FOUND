@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  {% for advert in adverts %}
+    <p>{{ advert.description }}</p>
+  {% endfor %}
+{% endblock %}
