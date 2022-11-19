@@ -1,6 +1,5 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
-from django.db.models import Q
 from advertisements.forms import AdvertForm, AdvertFilterForm
 from advertisements.models import Advert
 
