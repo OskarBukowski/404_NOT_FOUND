@@ -14,9 +14,7 @@ def register_view(request):
     if request.method == 'POST':
         form = UserCreateForm(request.POST)
         if form.is_valid():
-            user = form.save()
-            user.groups.add(Group.objects.get(name='User'))
-            user.save()
+            form.save()
             return redirect('login')
     return render(request, 'register.html', context={'form': form})
 
