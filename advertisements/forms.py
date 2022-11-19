@@ -8,4 +8,4 @@ class AdvertForm(forms.ModelForm):
     class Meta:
         model = Advert
         fields = "__all__"
-        exclude = ('is_active',)
+        exclude = ('is_active', 'user',)
