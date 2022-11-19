@@ -8,12 +8,12 @@ def list_view(request):
     adverts = Advert.objects.all()
     filter_form = AdvertFilterForm(request.GET or None)
     if filter_form.is_valid():
+        if category := filter_form.cleaned_data.get('category', ''):
+            adverts = adverts.filter(category=category)
         if title := filter_form.cleaned_data.get('title', '').strip():
             adverts = adverts.filter(title__icontains=title)
         if city := filter_form.cleaned_data.get('city', '').strip():
             adverts = adverts.filter(city__icontains=city)
-        if category := filter_form.cleaned_data.get('category', ''):
-            adverts = adverts.filter(category__in=category)
 
         adverts = adverts.order_by(filter_form.cleaned_data.get('post_date') or '-post_date')
 

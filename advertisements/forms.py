@@ -17,14 +17,14 @@ class AdvertFilterForm(forms.ModelForm):
         ('post_date', 'date ASC'),
         ('-post_date', 'date DESC'),)
 
+    category = forms.ChoiceField(choices=[(c.pk, c.name) for c in Category.objects.all()], required=False)
     title = forms.CharField(required=False)
     city = forms.CharField(required=False)
-    category = forms.MultipleChoiceField(choices=[(c.pk, c.name) for c in Category.objects.all()], required=False)
     post_date = forms.ChoiceField(choices=ORDER_CHOICES)
 
     class Meta:
         model = Advert
-        fields = ('title', 'city',)
+        fields = ('category', 'title', 'city',)
 
 
 
