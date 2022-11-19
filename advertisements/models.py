@@ -22,6 +22,7 @@ class Category(models.Model):
 
 
 class Advert(models.Model):
+    title = models.CharField(max_length=128)
     post_date = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     is_active = models.BooleanField(default=True)
