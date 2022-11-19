@@ -1,0 +1,2 @@
+STATIC_ROOT = '/opt/404_NOT_FOUND/static'
+MEDIA_ROOT = '/opt/404_NOT_FOUND/media'
