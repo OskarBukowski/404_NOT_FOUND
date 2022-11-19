@@ -27,7 +27,7 @@ SECRET_KEY = credentials.SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '3.10.192.63']
+ALLOWED_HOSTS = ['localhost', '3.10.192.63', '127.0.0.1']
 
 LOGIN_URL = '/login'
 
