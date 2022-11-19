@@ -31,6 +31,9 @@ ALLOWED_HOSTS = ['localhost', '3.10.192.63', '127.0.0.1']
 
 LOGIN_URL = '/login'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_URL = "/media/"
+
 
 # Application definition
 
