@@ -20,6 +20,9 @@ Descripiton
 class Category(models.Model):
     name = models.CharField(max_length=128)
 
+    def __str__(self):
+        return self.name
+
 
 class Advert(models.Model):
     title = models.CharField(max_length=128)
@@ -31,6 +34,9 @@ class Advert(models.Model):
     picture = models.ImageField(blank=True, null=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     description = models.TextField()
+
+    def __str__(self):
+        return self.title
 
 
 

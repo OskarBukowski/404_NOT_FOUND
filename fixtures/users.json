@@ -1,0 +1,47 @@
+[
+{
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+        "password": "userpassword",
+        "last_login": null,
+        "email": "michal@gmail.com",
+        "creation_date": "2022-11-19T13:24:35.375Z",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+        "password": "userpassword",
+        "last_login": null,
+        "email": "krzysiek@gmail.com",
+        "creation_date": "2022-11-19T13:24:55.762Z",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+        "password": "userpassword",
+        "last_login": null,
+        "email": "tomek@gmail.com",
+        "creation_date": "2022-11-19T13:25:16.401Z",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

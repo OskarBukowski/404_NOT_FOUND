@@ -1,0 +1,113 @@
+[
+{
+    "model": "advertisements.category",
+    "pk": 1,
+    "fields": {
+        "name": "Electronics"
+    }
+},
+{
+    "model": "advertisements.category",
+    "pk": 2,
+    "fields": {
+        "name": "Clothes"
+    }
+},
+{
+    "model": "advertisements.category",
+    "pk": 3,
+    "fields": {
+        "name": "Furniture"
+    }
+},
+{
+    "model": "advertisements.advert",
+    "pk": 1,
+    "fields": {
+        "title": "Dupa",
+        "post_date": "2022-11-19T13:05:40.938Z",
+        "user": 1,
+        "is_active": true,
+        "city": "Warsaw",
+        "phone": 2137,
+        "picture": "",
+        "category": 1,
+        "description": "DUPAdupa"
+    }
+},
+{
+    "model": "advertisements.advert",
+    "pk": 2,
+    "fields": {
+        "title": "krzesło",
+        "post_date": "2022-11-19T13:25:52.794Z",
+        "user": 2,
+        "is_active": true,
+        "city": "Warsaw",
+        "phone": 213,
+        "picture": "",
+        "category": 3,
+        "description": "gdsvgvds"
+    }
+},
+{
+    "model": "advertisements.advert",
+    "pk": 3,
+    "fields": {
+        "title": "kurtka",
+        "post_date": "2022-11-19T13:27:25.821Z",
+        "user": 4,
+        "is_active": true,
+        "city": "Warsaw",
+        "phone": 321,
+        "picture": "",
+        "category": 2,
+        "description": "sdfbdg"
+    }
+},
+{
+    "model": "advertisements.advert",
+    "pk": 4,
+    "fields": {
+        "title": "buty",
+        "post_date": "2022-11-19T13:27:48.961Z",
+        "user": 2,
+        "is_active": true,
+        "city": "Warsaw",
+        "phone": 213,
+        "picture": "",
+        "category": 2,
+        "description": "dfsdfgbdfbdfb"
+    }
+},
+{
+    "model": "advertisements.advert",
+    "pk": 5,
+    "fields": {
+        "title": "komputer",
+        "post_date": "2022-11-19T13:28:14.315Z",
+        "user": 3,
+        "is_active": true,
+        "city": "Warsaw",
+        "phone": 21,
+        "picture": "",
+        "category": 1,
+        "description": "fscsdvc"
+    }
+},
+{
+    "model": "advertisements.advert",
+    "pk": 6,
+    "fields": {
+        "title": "telewizor",
+        "post_date": "2022-11-19T13:28:30.573Z",
+        "user": 4,
+        "is_active": true,
+        "city": "Warsaw",
+        "phone": 21,
+        "picture": "",
+        "category": 1,
+        "description": "dsvcxzx"
+    }
+}
+]
