@@ -9,6 +9,13 @@
 * {
     margin: 0;
     padding: 0;
+    color: var(--darkest-color);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--lightest-color);
 }
 
 ul {
@@ -17,21 +24,48 @@ ul {
 }
 
 li {
-    background-color: black;
+    background-color: var(--light-color);
     padding: 5px 5px 5px 5px;
     margin-top: 10px;
     border-radius: 5px;
 }
 
 .navbar {
-    padding: 10px;
+    background-color: var(--darkest-color);
+    height: 50px;
+}
+
+a.navbar-item {
+    color: var(--light-color);
+    float: left;
+    height: inherit;
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 a:link {
     text-decoration: none;
 }
 
+a.navbar-item:hover {
+    background-color: var(--dark-color);
+}
+
+a.navbar:link {
+    text-decoration: none;
+    color: var(--lightest-color);
+}
+
+a.navbar:visited {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
 .advert {
     font-size: 25px;
-    color: var(--lightest-color);
+    color: var(--darkest-color);
 }
