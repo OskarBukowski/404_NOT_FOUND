@@ -2,6 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from advertisements.forms import AdvertForm, AdvertFilterForm, ImageForm
 from advertisements.models import Advert, Image
+from django.core.paginator import Paginator
 
 
 def list_view(request):
@@ -47,3 +48,11 @@ def showimage(request):
                }
 
     return render(request, 'image.html', context)
+
+
+def adverts_paginated(request):
+    adverts = Advert.objects.all().order_by('-post_date')
+    paginator = Paginator(adverts, 10)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    return render(request, 'adverts.html', {'page_obj': page_obj})
