@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block body %}
-  {% for advert in adverts %}
     <p>{{ advert.title }}</p>
-  {% endfor %}
+    <p>{{ advert.description }}</p>
+    <p>{{ advert.city }}</p>
 {% endblock %}

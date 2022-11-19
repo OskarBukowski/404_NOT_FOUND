@@ -8,7 +8,7 @@ def list_view(request):
 
 
 
-def single_advert(request, id):
-    advert = Advert.objects.get(pk=id)
+def single_advert(request, pk):
+    advert = Advert.objects.get(pk=pk)
     return render(request, 'advert_detail.html', context={'advert': advert})
 
