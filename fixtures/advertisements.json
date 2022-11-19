@@ -84,20 +84,6 @@
     }
 },
 {
-    "model": "advertisements.category",
-    "pk": 13,
-    "fields": {
-        "name": "Services"
-    }
-},
-{
-    "model": "advertisements.category",
-    "pk": 14,
-    "fields": {
-        "name": "Travel"
-    }
-},
-{
     "model": "advertisements.advert",
     "pk": 1,
     "fields": {
