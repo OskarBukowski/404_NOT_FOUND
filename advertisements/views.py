@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from advertisements.forms import AdvertForm
 from advertisements.models import Advert
@@ -13,6 +14,7 @@ def single_advert(request, pk):
     return render(request, 'advert_detail.html', context={'advert': advert})
 
 
+@login_required
 def create_advert(request):
     advert = Advert(user=request.user)
     form = AdvertForm(request.POST or None, instance=advert)

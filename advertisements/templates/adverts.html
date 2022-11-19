@@ -2,6 +2,14 @@
 
 {% block body %}
   <div>
+    <ul>
+      {% for advert in adverts %}
+        <li>
+          <a href="{% url 'single_advert' advert.id %}">{{ advert.title }}</a>
+          <p>{{ advert.city }}</p>
+        </li>
+      {% endfor %}
+    </ul>
     <hr>
     {% for advert in adverts %}
       <a href="{% url 'single_advert' advert.id %}">{{ advert.title }}</a>
