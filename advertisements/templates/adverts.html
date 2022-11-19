@@ -6,9 +6,10 @@
         <ul>
             {% for advert in adverts %}
             <li>
-                <a href="{% url 'single_advert' advert.id %}">{{ advert.title }}</a>
-                <p>{{ advert.city }}</p>
+                <a class="title" href="{% url 'single_advert' advert.id %}">{{ advert.title }}</a>
+                <h5>{{ advert.city }}</h5>
             </li>
+            <hr>
             {% endfor %}
         </ul>
     </div>

@@ -1,9 +1,9 @@
 :root {
-    --darkest-color: #012E40;
-    --dark-color: #024959;
-    --basic-color: #026773;
-    --light-color: #3CA6A6;
-    --lightest-color: #F2E3D5;
+    --darkest-color: #17252A;
+    --dark-color: #2B7A78;
+    --basic-color: #3AAFA9;
+    --light-color: #DEF2F1;
+    --lightest-color: #FEFFFF;
 }
 
 * {
@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: var(--lightest-color);
+    background-color: var(--light-color);
 }
 
 ul {
@@ -25,10 +25,11 @@ ul {
 }
 
 li {
-    background-color: var(--light-color);
-    padding: 5px 5px 5px 5px;
+    background-color: var(--basic-color);
     margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
+    height: 120px;
 }
 
 input[type=text] {
@@ -36,6 +37,7 @@ input[type=text] {
     padding-right: 8px;
     border-radius: 10px;
     border-width: 2px;
+    background-color: var(--lightest-color);
 }
 
 input[type=submit] {
@@ -47,8 +49,26 @@ input[type=submit] {
     border-width: 1px;
 }
 
+select {
+    border-radius: 10px;
+    padding: 3px;
+    background-color: var(--lightest-color);
+}
+
+select {
+    border-radius: 10px;
+}
+
 form {
+    margin: 20px;
     text-align: center;
+}
+
+h5 {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 5px;
+    margin-top: auto;
 }
 
 .navbar {
@@ -60,7 +80,7 @@ form {
 
 a.navbar-item {
     float: left;
-    color: var(--light-color);
+    color: var(--basic-color);
     float: left;
     height: inherit;
     width: 100px;
@@ -76,7 +96,8 @@ a:link {
 }
 
 a.navbar-item:hover {
-    background-color: var(--dark-color);
+    background-color: var(--lightest-color);
+    color: var(--dark-color);
 }
 
 a.navbar:link {
@@ -92,4 +113,9 @@ a.navbar:visited {
 .advert {
     font-size: 25px;
     color: var(--darkest-color);
+}
+
+.title {
+    font-size: 32px;
+    padding: 10px;
 }
