@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
 
 {% block body %}
-  {% for advert in adverts %}
-    <p>{{ advert.title }}</p>
-  {% endfor %}
+  <div>
+    <hr>
+    {% for advert in adverts %}
+      <a href="{% url 'single_advert' advert.id %}">{{ advert.title }}</a>
+      <hr>
+    {% endfor %}
+  </div>
 {% endblock %}
