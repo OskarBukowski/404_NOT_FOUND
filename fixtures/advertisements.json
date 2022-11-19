@@ -101,84 +101,96 @@
     "model": "advertisements.category",
     "pk": 1,
     "fields": {
-        "name": "Electronics"
+        "name": "Electronics",
+        "image": 5
     }
 },
 {
     "model": "advertisements.category",
     "pk": 2,
     "fields": {
-        "name": "Clothes"
+        "name": "Clothes",
+        "image": 3
     }
 },
 {
     "model": "advertisements.category",
     "pk": 3,
     "fields": {
-        "name": "Furniture"
+        "name": "Furniture",
+        "image": 7
     }
 },
 {
     "model": "advertisements.category",
     "pk": 4,
     "fields": {
-        "name": "Food"
+        "name": "Food",
+        "image": 6
     }
 },
 {
     "model": "advertisements.category",
     "pk": 5,
     "fields": {
-        "name": "Automotive"
+        "name": "Automotive",
+        "image": 2
     }
 },
 {
     "model": "advertisements.category",
     "pk": 6,
     "fields": {
-        "name": "Home"
+        "name": "Home",
+        "image": 9
     }
 },
 {
     "model": "advertisements.category",
     "pk": 7,
     "fields": {
-        "name": "Agriculture"
+        "name": "Agriculture",
+        "image": 0
     }
 },
 {
     "model": "advertisements.category",
     "pk": 8,
     "fields": {
-        "name": "Animals"
+        "name": "Animals",
+        "image": 1
     }
 },
 {
     "model": "advertisements.category",
     "pk": 9,
     "fields": {
-        "name": "Sport"
+        "name": "Sport",
+        "image": 12
     }
 },
 {
     "model": "advertisements.category",
     "pk": 10,
     "fields": {
-        "name": "Music"
+        "name": "Music",
+        "image": 10
     }
 },
 {
     "model": "advertisements.category",
     "pk": 11,
     "fields": {
-        "name": "Hobby"
+        "name": "Hobby",
+        "image": 8
     }
 },
 {
     "model": "advertisements.category",
     "pk": 12,
     "fields": {
-        "name": "Education"
+        "name": "Education",
+        "image": 4
     }
 },
 {
