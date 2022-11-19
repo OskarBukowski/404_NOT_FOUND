@@ -14,7 +14,7 @@ def list_view(request):
             adverts = adverts.filter(city__icontains=city)
         if category := filter_form.cleaned_data.get('category', ''):
             adverts = adverts.filter(category__in=category)
-    return render(request, 'adverts.html', context={'form': filter_form, 'adverts': adverts})
+    return render(request, 'adverts.html', context={'form': filter_form, 'adverts': adverts.order_by('-post_date').values()})
 
 
 def single_advert(request, pk):
