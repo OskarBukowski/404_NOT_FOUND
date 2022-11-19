@@ -3,8 +3,16 @@ from django.db import models
 from users.models import User
 
 
+class Image(models.Model):
+    imagefile = models.FileField(upload_to='images/', null=True, verbose_name="")
+
+    def __str__(self):
+        return str(self.imagefile)
+
+
 class Category(models.Model):
     name = models.CharField(max_length=128)
+    image = models.OneToOneField(Image, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
@@ -20,13 +28,7 @@ class Advert(models.Model):
     picture = models.ImageField(blank=True, null=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     description = models.TextField()
+    image = models.OneToOneField(Image, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
-
-
-class Image(models.Model):
-    imagefile = models.FileField(upload_to='images/', null=True, verbose_name="")
-
-    def __str__(self):
-        return str(self.imagefile)
