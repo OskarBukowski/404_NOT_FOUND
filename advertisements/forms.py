@@ -1,6 +1,6 @@
 from django import forms
 
-from advertisements.models import Advert, Category
+from advertisements.models import Advert, Category, Image
 
 
 class AdvertForm(forms.ModelForm):
@@ -25,3 +25,11 @@ class AdvertFilterForm(forms.ModelForm):
     class Meta:
         model = Advert
         fields = ('title', 'city',)
+
+
+
+
+class ImageForm(forms.ModelForm):
+    class Meta:
+        model = Image
+        fields = ["name", "imagefile"]

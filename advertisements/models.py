@@ -3,20 +3,6 @@ from django.db import models
 from users.models import User
 
 
-#ADVERT:
-"""
-Sender
-Post date
-if active
-City
-Phone number
-picture
-Category
-Descripiton
-
-"""
-
-
 class Category(models.Model):
     name = models.CharField(max_length=128)
 
@@ -39,10 +25,9 @@ class Advert(models.Model):
         return self.title
 
 
+class Image(models.Model):
+    name = models.CharField(max_length=500)
+    file = models.FileField(upload_to='images/', null=True, verbose_name="")
 
-
-
-
-
-
-
+    def __str__(self):
+        return self.name + ": " + str(self.file)

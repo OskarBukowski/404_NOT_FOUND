@@ -1,7 +1,7 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
-from advertisements.forms import AdvertForm, AdvertFilterForm
-from advertisements.models import Advert
+from advertisements.forms import AdvertForm, AdvertFilterForm, ImageForm
+from advertisements.models import Advert, Image
 
 
 def list_view(request):
@@ -33,3 +33,17 @@ def create_advert(request):
         form.save()
         return redirect('adverts')
     return render(request, 'advert_create.html', {'form': form})
+
+
+def showimage(request):
+    lastimage = Image.objects.last()
+    imagefile = lastimage.imagefile
+    form = ImageForm(request.POST or None, request.FILES or None)
+    if form.is_valid():
+        form.save()
+
+    context = {'imagefile': imagefile,
+               'form': form
+               }
+
+    return render(request, 'image.html', context)
