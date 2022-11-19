@@ -1,5 +1,103 @@
 [
 {
+    "model": "advertisements.image",
+    "pk": 0,
+    "fields": {
+        "imagefile": "media/agriculture.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 1,
+    "fields": {
+        "imagefile": "media/animals.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 2,
+    "fields": {
+        "imagefile": "media/automotive.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 3,
+    "fields": {
+        "imagefile": "media/clothes.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 4,
+    "fields": {
+        "imagefile": "media/education.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 5,
+    "fields": {
+        "imagefile": "media/electronics.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 6,
+    "fields": {
+        "imagefile": "media/food.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 7,
+    "fields": {
+        "imagefile": "media/furniture.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 8,
+    "fields": {
+        "imagefile": "media/hobby.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 9,
+    "fields": {
+        "imagefile": "media/home.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 10,
+    "fields": {
+        "imagefile": "media/music.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 11,
+    "fields": {
+        "imagefile": "media/services.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 12,
+    "fields": {
+        "imagefile": "media/sport.png"
+    }
+},
+{
+    "model": "advertisements.image",
+    "pk": 13,
+    "fields": {
+        "imagefile": "media/travel.png"
+    }
+},
+{
     "model": "advertisements.category",
     "pk": 1,
     "fields": {
