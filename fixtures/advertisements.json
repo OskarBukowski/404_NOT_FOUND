@@ -21,6 +21,83 @@
     }
 },
 {
+    "model": "advertisements.category",
+    "pk": 4,
+    "fields": {
+        "name": "Food"
+    }
+},
+{
+    "model": "advertisements.category",
+    "pk": 5,
+    "fields": {
+        "name": "Automotive"
+    }
+},
+{
+    "model": "advertisements.category",
+    "pk": 6,
+    "fields": {
+        "name": "Home"
+    }
+},
+{
+    "model": "advertisements.category",
+    "pk": 7,
+    "fields": {
+        "name": "Agriculture"
+    }
+},
+{
+    "model": "advertisements.category",
+    "pk": 8,
+    "fields": {
+        "name": "Animals"
+    }
+},
+{
+    "model": "advertisements.category",
+    "pk": 9,
+    "fields": {
+        "name": "Sport"
+    }
+},
+{
+    "model": "advertisements.category",
+    "pk": 10,
+    "fields": {
+        "name": "Music"
+    }
+},
+{
+    "model": "advertisements.category",
+    "pk": 11,
+    "fields": {
+        "name": "Hobby"
+    }
+},
+{
+    "model": "advertisements.category",
+    "pk": 12,
+    "fields": {
+        "name": "Education"
+    }
+},
+{
+    "model": "advertisements.category",
+    "pk": 13,
+    "fields": {
+        "name": "Services"
+    }
+},
+{
+    "model": "advertisements.category",
+    "pk": 14,
+    "fields": {
+        "name": "Travel"
+    }
+},
+{
     "model": "advertisements.advert",
     "pk": 1,
     "fields": {
@@ -108,6 +185,96 @@
         "picture": "",
         "category": 1,
         "description": "dsvcxzx"
+    }
+},
+{
+    "model": "advertisements.advert",
+    "pk": 7,
+    "fields": {
+        "title": "Old Generation TV",
+        "post_date": "2022-11-19T15:40:30.573Z",
+        "user": 4,
+        "is_active": true,
+        "city": "Lublin",
+        "phone": 224444444,
+        "picture": "",
+        "category": 1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt lobortis diam sit amet congue. Vivamus sed dolor porta est blandit tristique nec eu purus. Maecenas et tristique nisi, quis pharetra magna. Fusce tristique ante ligula, vel interdum quam dapibus in. Proin mi risus, aliquet eget interdum vel, lobortis a erat. Aliquam ornare ante eget feugiat tristique. Pellentesque posuere tempor nunc, quis consectetur justo fermentum eget. Proin at suscipit purus. Aliquam molestie cursus tempor. Duis sodales nulla a augue sodales, vitae imperdiet libero pulvinar. Suspendisse eget leo ex. Mauris ut lacinia tortor."
+    }
+},
+{
+    "model": "advertisements.advert",
+    "pk": 8,
+    "fields": {
+        "title": "Used clothes",
+        "post_date": "2022-11-19T15:40:30.573Z",
+        "user": 3,
+        "is_active": true,
+        "city": "Warsaw",
+        "phone": 504320667,
+        "picture": "",
+        "category": 2,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt lobortis diam sit amet congue. Vivamus sed dolor porta est blandit tristique nec eu purus. Maecenas et tristique nisi, quis pharetra magna. Fusce tristique ante ligula, vel interdum quam dapibus in. Proin mi risus, aliquet eget interdum vel, lobortis a erat. Aliquam ornare ante eget feugiat tristique. Pellentesque posuere tempor nunc, quis consectetur justo fermentum eget. Proin at suscipit purus. Aliquam molestie cursus tempor. Duis sodales nulla a augue sodales, vitae imperdiet libero pulvinar. Suspendisse eget leo ex. Mauris ut lacinia tortor."
+    }
+},
+{
+    "model": "advertisements.advert",
+    "pk": 9,
+    "fields": {
+        "title": "Old Beco fridge",
+        "post_date": "2022-11-19T18:57:20.840Z",
+        "user": 1,
+        "is_active": true,
+        "city": "Krakow",
+        "phone": 456090891,
+        "picture": "",
+        "category": 1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt lobortis diam sit amet congue. Vivamus sed dolor porta est blandit tristique nec eu purus. Maecenas et tristique nisi, quis pharetra magna. Fusce tristique ante ligula, vel interdum quam dapibus in. Proin mi risus, aliquet eget interdum vel, lobortis a erat. Aliquam ornare ante eget feugiat tristique. Pellentesque posuere tempor nunc, quis consectetur justo fermentum eget. Proin at suscipit purus. Aliquam molestie cursus tempor. Duis sodales nulla a augue sodales, vitae imperdiet libero pulvinar. Suspendisse eget leo ex. Mauris ut lacinia tortor."
+    }
+},
+{
+    "model": "advertisements.advert",
+    "pk": 10,
+    "fields": {
+        "title": "Childer clothes to take",
+        "post_date": "2022-11-19T18:59:07.324Z",
+        "user": 1,
+        "is_active": true,
+        "city": "Szczecin",
+        "phone": 334775923,
+        "picture": "",
+        "category": 2,
+        "description": "Sed tempor porttitor semper. Aliquam vel ipsum risus. Vivamus vehicula tortor vel auctor ultricies. Nullam eget viverra sem. Nunc vestibulum augue in felis rhoncus, sit amet molestie ex egestas. Nullam rutrum ante velit, non fringilla velit dapibus sit amet. Sed finibus elit quis felis luctus, ut laoreet nisl cursus. Nulla ut massa sed odio porta vulputate. Phasellus molestie tempus nulla sed consequat. Suspendisse ac nisi nec nisi ullamcorper convallis ut sit amet neque. Fusce tempor vitae urna vel semper. Ut eget felis eu orci venenatis viverra"
+    }
+},
+{
+    "model": "advertisements.advert",
+    "pk": 11,
+    "fields": {
+        "title": "Sport equipment from closed sports hal",
+        "post_date": "2022-11-19T19:00:59.875Z",
+        "user": 1,
+        "is_active": true,
+        "city": "Bogatynia",
+        "phone": 334677890,
+        "picture": "",
+        "category": 9,
+        "description": "Vivamus eu quam et sapien fermentum imperdiet non vel nunc. Integer feugiat viverra lorem in maximus. In luctus, odio sit amet porttitor eleifend, leo augue tempus odio, et sollicitudin ex enim in eros. Vivamus et euismod odio, vitae fermentum lacus. Aliquam ultricies a tellus et consectetur. Morbi vitae sem arcu. Fusce nec viverra sapien."
+    }
+},
+{
+    "model": "advertisements.advert",
+    "pk": 12,
+    "fields": {
+        "title": "Not sole dishes to take",
+        "post_date": "2022-11-19T19:07:32.205Z",
+        "user": 1,
+        "is_active": true,
+        "city": "Wroclaw",
+        "phone": 446788344,
+        "picture": "",
+        "category": 4,
+        "description": "Curabitur ornare felis id neque porttitor tempus. Sed porttitor orci vitae arcu tempor dignissim. Integer porttitor magna nec eleifend tempus. Cras sit amet est non tellus bibendum congue. Aenean sed est pellentesque, volutpat felis et, sollicitudin turpis. Aenean at tortor at sapien commodo suscipit"
     }
 }
 ]
