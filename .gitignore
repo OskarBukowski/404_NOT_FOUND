@@ -1,4 +1,7 @@
 /.idea
 **/__pycache__
 
+db.sqlite3
+
 /config
+/local_files
