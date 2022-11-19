@@ -27,7 +27,7 @@ class Advert(models.Model):
 
 class Image(models.Model):
     name = models.CharField(max_length=500)
-    file = models.FileField(upload_to='images/', null=True, verbose_name="")
+    imagefile = models.FileField(upload_to='images/', null=True, verbose_name="")
 
     def __str__(self):
-        return self.name + ": " + str(self.file)
+        return self.name + ": " + str(self.imagefile)
