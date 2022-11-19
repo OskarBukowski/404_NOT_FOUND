@@ -1,3 +1,37 @@
+:root {
+    --darkest-color: #012E40;
+    --dark-color: #024959;
+    --basic-color: #026773;
+    --light-color: #3CA6A6;
+    --lightest-color: #F2E3D5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 ul {
-  list-style-type: none;
+    list-style-type: none;
+    margin: 50px;
+}
+
+li {
+    background-color: black;
+    padding: 5px 5px 5px 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.navbar {
+    padding: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.advert {
+    font-size: 25px;
+    color: var(--lightest-color);
 }
