@@ -1,11 +1,12 @@
 from django.shortcuts import render, redirect
-from advertisements.forms import AdvertForm
+from advertisements.forms import AdvertForm, AdvertFilterForm
 from advertisements.models import Advert
 
 
 def list_view(request):
     adverts = Advert.objects.all()
-    return render(request, 'adverts.html', context={'adverts': adverts})
+    filter_form = AdvertFilterForm(request.POST or None)
+    return render(request, 'adverts.html', context={'form':filter_form, 'adverts': adverts})
 
 
 def single_advert(request, pk):
@@ -20,3 +21,8 @@ def create_advert(request):
         form.save()
         return redirect('adverts')
     return render(request, 'advert_create.html', {'form': form})
+
+
+def filter_adverts(request):
+    form = AdvertFilterForm(request.POST or None)
+    return render(request, 'advert_filter.html', {'form': form})

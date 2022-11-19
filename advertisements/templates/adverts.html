@@ -2,6 +2,9 @@
 
 {% block body %}
   <div>
+    {% include 'advert_filter.html' %}
+  </div>
+  <div>
     <hr>
     {% for advert in adverts %}
       <a href="{% url 'single_advert' advert.id %}">{{ advert.title }}</a>
