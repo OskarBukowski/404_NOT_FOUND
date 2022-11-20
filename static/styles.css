@@ -47,6 +47,7 @@ input[type=submit] {
     padding-right: 8px;
     border-radius: 10px;
     border-width: 1px;
+    margin-left: 20px;
 }
 
 select {
@@ -55,8 +56,8 @@ select {
     background-color: var(--lightest-color);
 }
 
-select {
-    border-radius: 10px;
+label {
+    margin-left: 20px;
 }
 
 form {
@@ -64,8 +65,28 @@ form {
     text-align: center;
 }
 
+img {
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
 h5 {
     font-size: 12px;
+    font-weight: normal;
+    margin: 5px;
+    margin-top: auto;
+}
+
+h9 {
+    font-size: 8px;
     font-weight: normal;
     margin: 5px;
     margin-top: auto;
@@ -140,4 +161,20 @@ a.navbar:visited {
 #arrow-left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
+}
+
+.advert-body {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.description {
+    margin-top: 50px;
+}
+
+.info {
+    float:left;
+    display:inline;
 }

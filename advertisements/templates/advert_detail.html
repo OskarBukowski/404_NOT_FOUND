@@ -1,7 +1,13 @@
 {% extends 'base.html' %}
 
 {% block body %}
-    <p>{{ advert.title }}</p>
-    <p>{{ advert.description }}</p>
-    <p>{{ advert.city }}</p>
+    <div class="advert-body">
+        <h1>{{ advert.title }}</h1>
+        <div>
+            <h5 class="info">{{ advert.city }}</h5>
+            <h5 class="info">Added: {{advert.post_date|date:"d-m-Y G:s" }}</h5>
+        </div>
+        <h3 class="description">{{ advert.description }}</h3>
+        <img src="../../{{ advert.image.imagefile }}" alt="img">
+    </div>
 {% endblock %}

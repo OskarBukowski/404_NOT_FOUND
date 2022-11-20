@@ -4,7 +4,7 @@ from users.models import User
 
 
 class Image(models.Model):
-    imagefile = models.FileField(upload_to='images/', null=True, verbose_name="")
+    imagefile = models.ImageField(upload_to='media/')
 
     def __str__(self):
         return str(self.imagefile)
