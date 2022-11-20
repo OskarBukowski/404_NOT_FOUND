@@ -4,7 +4,7 @@
     {% include 'advert_filter.html' %}
     <div class="advert">
         <ul>
-            {% for advert in adverts %}
+            {% for advert in page_obj %}
             <li>
                 <a class="title" href="{% url 'single_advert' advert.id %}">{{ advert.title }}</a>
                 <h5>{{ advert.city }}</h5>
@@ -12,5 +12,19 @@
             <hr>
             {% endfor %}
         </ul>
+    </div>
+
+    <div class="paginator">
+      <span>
+        {% if page_obj.has_previous %}
+          <a href="?page={{ page_obj.previous_page_number }}"><i id="arrow-left" class="arrow"></i></a>
+        {% endif %}
+        <span>
+          page {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}
+        </span>
+        {% if page_obj.has_next %}
+          <a href="?page={{ page_obj.next_page_number }}"><i id="arrow-right" class="arrow"></i></a>
+        {% endif %}
+      </span>
     </div>
 {% endblock %}

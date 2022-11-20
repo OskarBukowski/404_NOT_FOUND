@@ -6,8 +6,9 @@ from advertisements.models import Advert, Image
 
 
 def list_view(request):
-    adverts = Advert.objects.all()
-    filter_form = AdvertFilterForm(request.GET or None)
+    adverts = Advert.objects.all().order_by('-post_date')
+    filter_form = AdvertFilterForm(request.GET)
+
     if filter_form.is_valid():
         if category := filter_form.cleaned_data.get('category', ''):
             adverts = adverts.filter(category=category)
@@ -18,7 +19,13 @@ def list_view(request):
 
         adverts = adverts.order_by(filter_form.cleaned_data.get('order_by') or '-post_date')
 
-    return render(request, 'adverts.html', context={'form': filter_form, 'adverts': adverts})
+    paginator = Paginator(adverts, 3)
+    print(request.GET.get('page'))
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    print(page_obj)
+
+    return render(request, 'adverts.html', context={'form': filter_form, 'page_obj': page_obj})
 
 
 def single_advert(request, pk):

@@ -2,7 +2,7 @@
     <a class="navbar-item" href="{% url 'home' %}">Home</a>
     <a class="navbar-item" href="{% url 'adverts' %}">Search</a>
     {% if user.is_authenticated %}
-        <a class="navbar-item" href="{% url 'advert_create' %}">Add new advert</a>
+        <a class="navbar-item" href="{% url 'advert_create' %}">Add advert</a>
         <a class="navbar-item" href="{% url 'logout' %}">Logout</a>
     {% else %}
         <a class="navbar-item" href="{% url 'login' %}">Login</a>
